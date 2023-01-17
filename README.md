@@ -1,6 +1,8 @@
 # argv-wrapper
 Utills with examples for wrapping arguments for original application
 
+It uses modified CommandLineToArgvW from Wine sources which now splits command line into arguments without changing them
+
 You should replace original app with your wrapper and use new name/path in wrapper
 
 You can use this tamplate:
