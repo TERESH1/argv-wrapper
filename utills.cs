@@ -83,10 +83,6 @@ namespace ArgvWrapper {
                   var count = Source.Read(buffer, 0, BufferSize);
                   if (count <= 0)
                      break;
-                  if (count == BufferSize)
-                     Environment.SetEnvironmentVariable("MSVCWrapperOverflow","1");
-                  if (count == BufferSize - 1)
-                     Environment.SetEnvironmentVariable("MSVCWrapperOverflow","2");
                   Destination.Write(buffer, 0, count);
                   Destination.Flush();
                }
